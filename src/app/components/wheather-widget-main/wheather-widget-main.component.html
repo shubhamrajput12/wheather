@@ -1,0 +1,18 @@
+
+<div id="divWheatherMain" style="text-align: center;">
+    <div *ngIf="setwheatherdata.isDay" class="wheatherWidgetRow">
+        <i class="fas fa-3x fa-sun sun"></i>
+    </div>
+    <div *ngIf="!setwheatherdata.isDay" class="wheatherWidgetRow">
+        <i class="fas fa-3x fa-moon moon"></i>
+    </div>
+    <div class="wheatherWidgetRow cloudDiv">
+        <i class="fas fa-3x fa-cloud cloud"></i>
+    </div>
+   
+    <div class="wheatherWidgetRow" style="font-size: 32px;margin-top:5px;">{{setwheatherdata.temp_celcius}}°</div>
+    <div class="wheatherWidgetRow" style="font-size: 14px;">{{setwheatherdata.temp_min}}°/{{setwheatherdata.temp_max}}°</div>
+    <div class="wheatherWidgetRow" style="font-size: 14px;">Feels like : {{setwheatherdata.temp_feels_like}}°</div>
+    <div class="wheatherWidgetRow" style="font-size: 25px; margin-top: 10px;">{{setwheatherdata.name}}</div>
+    <div class="wheatherWidgetRow" style="font-size: 14px;">Humidity : {{setwheatherdata.main.humidity}}%</div>
+</div>

@@ -30,7 +30,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["src/font/all.js"]
           },
           "configurations": {
             "production": {
